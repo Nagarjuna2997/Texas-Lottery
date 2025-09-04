@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mega Millions - Texas Lottery Lucky Numbers Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar-fixed">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">🎰 TX Lottery</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#rules" class="nav-link">Rules</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://t.me/+LALd-E8VV_4zYjdh" target="_blank" class="nav-link telegram-link">
+                        📱 Join Discussions
+                    </a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container game-page">
+        <div class="game-header-section" style="background-image: linear-gradient(rgba(255,193,7,0.1), rgba(255,193,7,0.1)), url('https://images.unsplash.com/photo-1541599468348-e96984315925?auto=format&fit=crop&w=1200&q=80')">
+            <div class="game-icon-large">🟡</div>
+            <h1>Mega Millions</h1>
+            <p class="game-subtitle">Multi-State Lottery with Life-Changing Jackpots</p>
+        </div>
+
+        <!-- Number Generator Section -->
+        <section class="generator-section">
+            <h2>🎲 Generate Your Lucky Numbers</h2>
+            <div class="generator-card">
+                <button onclick="generateNumbers('megamillions')" class="generate-btn-large">
+                    ✨ Generate Mega Millions Numbers
+                </button>
+                <div id="megamillions-result" class="result-display"></div>
+            </div>
+        </section>
+
+        <!-- How to Play Section -->
+        <section class="how-to-play">
+            <h2>🎮 How to Play Mega Millions</h2>
+            <div class="play-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>🎯 Choose Your Numbers</h3>
+                        <p>Pick 5 different numbers from 1 to 70 for the white balls ⚪ and 1 number from 1 to 25 for the golden Mega Ball 🟡.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>💰 Add Megaplier (Optional)</h3>
+                        <p>For an extra $1, add the Megaplier to multiply non-jackpot prizes by up to 5 times! 🚀</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>🛒 Purchase Your Ticket</h3>
+                        <p>Buy your ticket from any authorized Texas Lottery retailer 🏪 before 9:45 PM CT on draw days.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>📺 Watch the Drawing</h3>
+                        <p>Drawings are held every Tuesday and Friday at 10:00 PM CT 🕙.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>🎉 Check Your Numbers</h3>
+                        <p>Match all 6 numbers to win the jackpot! 💰 Even matching just the Mega Ball wins you $2 💵.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Prize Breakdown -->
+        <section class="prize-section">
+            <h2>💎 Prize Breakdown & Odds</h2>
+            <div class="prize-table">
+                <div class="prize-row header">
+                    <div>Match</div>
+                    <div>Prize</div>
+                    <div>Odds</div>
+                </div>
+                <div class="prize-row">
+                    <div>5 White Balls + Mega Ball</div>
+                    <div>JACKPOT</div>
+                    <div>1 in 302,575,350</div>
+                </div>
+                <div class="prize-row">
+                    <div>5 White Balls</div>
+                    <div>$1,000,000</div>
+                    <div>1 in 12,607,306</div>
+                </div>
+                <div class="prize-row">
+                    <div>4 White Balls + Mega Ball</div>
+                    <div>$10,000</div>
+                    <div>1 in 931,001</div>
+                </div>
+                <div class="prize-row">
+                    <div>4 White Balls</div>
+                    <div>$500</div>
+                    <div>1 in 38,792</div>
+                </div>
+                <div class="prize-row">
+                    <div>3 White Balls + Mega Ball</div>
+                    <div>$200</div>
+                    <div>1 in 14,547</div>
+                </div>
+                <div class="prize-row">
+                    <div>3 White Balls</div>
+                    <div>$10</div>
+                    <div>1 in 606</div>
+                </div>
+                <div class="prize-row">
+                    <div>2 White Balls + Mega Ball</div>
+                    <div>$10</div>
+                    <div>1 in 693</div>
+                </div>
+                <div class="prize-row">
+                    <div>1 White Ball + Mega Ball</div>
+                    <div>$4</div>
+                    <div>1 in 89</div>
+                </div>
+                <div class="prize-row">
+                    <div>Mega Ball Only</div>
+                    <div>$2</div>
+                    <div>1 in 37</div>
+                </div>
+            </div>
+            <div class="odds-info">
+                <p><strong>Overall odds of winning any prize:</strong> 1 in 24</p>
+                <p><strong>💥 Megaplier:</strong> Multiplies non-jackpot prizes by 2x, 3x, 4x, or 5x for an additional $1 per play.</p>
+                <p><strong>🏆 Jackpot:</strong> Starts at $20 million and grows until someone wins!</p>
+            </div>
+        </section>
+
+        <!-- Game Rules -->
+        <section class="rules-detailed">
+            <h2>📋 Detailed Game Rules</h2>
+            <div class="rules-content">
+                <div class="rule-category">
+                    <h3>📅 Drawing Schedule</h3>
+                    <ul>
+                        <li>Drawings are held twice per week</li>
+                        <li>Tuesday and Friday at 10:00 PM Central Time</li>
+                        <li>Sales close 15 minutes before each drawing</li>
+                        <li>Tickets can be purchased until 9:45 PM CT on drawing days</li>
+                    </ul>
+                </div>
+                <div class="rule-category">
+                    <h3>🎯 How to Win</h3>
+                    <ul>
+                        <li>Match all 5 white balls + Mega Ball = Jackpot</li>
+                        <li>Nine different ways to win prizes</li>
+                        <li>Jackpot starts at $20 million minimum</li>
+                        <li>Winners can choose cash lump sum or annuity</li>
+                        <li>Jackpot grows until someone wins</li>
+                    </ul>
+                </div>
+                <div class="rule-category">
+                    <h3>⚡ Megaplier Feature</h3>
+                    <ul>
+                        <li>Multiplies non-jackpot prizes by 2x, 3x, 4x, or 5x</li>
+                        <li>Costs an additional $1 per play</li>
+                        <li>Match 5 white balls with Megaplier wins up to $5 million</li>
+                        <li>Drawn separately before the main drawing</li>
+                        <li>Does not affect the jackpot amount</li>
+                    </ul>
+                </div>
+                <div class="rule-category">
+                    <h3>📝 Important Information</h3>
+                    <ul>
+                        <li>Must be 18 or older to play</li>
+                        <li>Tickets expire 180 days after drawing date</li>
+                        <li>Prizes over $5,000 subject to federal and state taxes</li>
+                        <li>Winners have 180 days to claim prizes</li>
+                        <li>Play responsibly and within your means</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating Telegram Button -->
+    <div class="telegram-float">
+        <a href="https://t.me/+LALd-E8VV_4zYjdh" target="_blank" class="telegram-btn" title="Join our Telegram group for discussions">
+            <div class="telegram-icon">📱</div>
+            <div class="telegram-text">Join Discussions</div>
+        </a>
+    </div>
+
+    <footer>
+        <div class="container">
+            <!-- Visitor Counter -->
+            <div class="visitor-counter-section">
+                <div class="visitor-counter">
+                    <span class="counter-icon">👁️</span>
+                    <span class="counter-text">Total Visitors:</span>
+                    <span class="counter-number" id="visitorCount">0</span>
+                </div>
+            </div>
+            
+            <p>Good luck with your Mega Millions numbers! 🍀 Remember to play responsibly.</p>
+            <p><small>This website is not affiliated with the Texas Lottery Commission. Numbers generated are random and for entertainment purposes.</small></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

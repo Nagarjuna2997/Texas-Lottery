@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All or Nothing - Texas Lottery Lucky Numbers Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar-fixed">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">🎰 TX Lottery</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#rules" class="nav-link">Rules</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://t.me/+LALd-E8VV_4zYjdh" target="_blank" class="nav-link telegram-link">
+                        📱 Join Discussions
+                    </a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container game-page">
+        <div class="game-header-section">
+            <div class="game-icon-large">🎪</div>
+            <h1>All or Nothing</h1>
+            <p class="game-subtitle">Win by Matching All 12 Numbers... or None!</p>
+        </div>
+
+        <!-- Number Generator Section -->
+        <section class="generator-section">
+            <h2>🎲 Generate Your Lucky Numbers</h2>
+            <div class="generator-card">
+                <button onclick="generateNumbers('allornothing')" class="generate-btn-large">
+                    🎪 Generate All or Nothing Numbers
+                </button>
+                <div id="allornothing-result" class="result-display"></div>
+            </div>
+        </section>
+
+        <!-- How to Play Section -->
+        <section class="how-to-play">
+            <h2>🎮 How to Play All or Nothing</h2>
+            <div class="play-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>🎯 Choose Your Numbers</h3>
+                        <p>Pick 12 different numbers from 1 to 24. Each number can only be selected once per play ⚪.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>🛒 Purchase Your Ticket</h3>
+                        <p>Buy your ticket from any authorized Texas Lottery retailer 🏪 for $2 per play. No other bet amounts available.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>📺 Watch the Drawings</h3>
+                        <p>Four daily drawings: Morning (10:12 AM), Day (12:27 PM), Evening (6:07 PM), Night (10:12 PM) 🕙.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>🎉 Check Your Numbers</h3>
+                        <p>Win the top prize by matching ALL 12 numbers OR NONE of your 12 numbers! 💰 Unique winning concept!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Prize Breakdown -->
+        <section class="prize-section">
+            <h2>💎 Prize Breakdown & Odds</h2>
+            <div class="prize-table">
+                <div class="prize-row header">
+                    <div>Match</div>
+                    <div>Prize</div>
+                    <div>Odds</div>
+                </div>
+                <div class="prize-row">
+                    <div>12 of 12 (All)</div>
+                    <div>$25,000</div>
+                    <div>1 in 2,704,156</div>
+                </div>
+                <div class="prize-row">
+                    <div>0 of 12 (Nothing)</div>
+                    <div>$25,000</div>
+                    <div>1 in 2,704,156</div>
+                </div>
+                <div class="prize-row">
+                    <div>11 of 12</div>
+                    <div>$500</div>
+                    <div>1 in 78,915</div>
+                </div>
+                <div class="prize-row">
+                    <div>1 of 12</div>
+                    <div>$500</div>
+                    <div>1 in 78,915</div>
+                </div>
+                <div class="prize-row">
+                    <div>10 of 12</div>
+                    <div>$20</div>
+                    <div>1 in 4,655</div>
+                </div>
+                <div class="prize-row">
+                    <div>2 of 12</div>
+                    <div>$20</div>
+                    <div>1 in 4,655</div>
+                </div>
+                <div class="prize-row">
+                    <div>9 of 12</div>
+                    <div>$4</div>
+                    <div>1 in 573</div>
+                </div>
+                <div class="prize-row">
+                    <div>3 of 12</div>
+                    <div>$4</div>
+                    <div>1 in 573</div>
+                </div>
+            </div>
+            <div class="odds-info">
+                <p><strong>Overall odds of winning any prize:</strong> 1 in 4.5</p>
+                <p><strong>🎪 Unique concept:</strong> Win by matching all or none of your numbers!</p>
+                <p><strong>⚖️ Symmetrical prizes:</strong> Same prize for matching 12 or 0, 11 or 1, etc.</p>
+                <p><strong>⏰ Four drawings daily:</strong> 1,460 chances to win per year!</p>
+            </div>
+        </section>
+
+        <!-- Game Rules -->
+        <section class="rules-detailed">
+            <h2>📋 Detailed Game Rules</h2>
+            <div class="rules-content">
+                <div class="rule-category">
+                    <h3>📅 Drawing Schedule</h3>
+                    <ul>
+                        <li>Four drawings every day</li>
+                        <li>Morning: 10:12 AM CT</li>
+                        <li>Day: 12:27 PM CT</li>
+                        <li>Evening: 6:07 PM CT</li>
+                        <li>Night: 10:12 PM CT</li>
+                    </ul>
+                </div>
+                <div class="rule-category">
+                    <h3>🎯 How to Win</h3>
+                    <ul>
+                        <li>Match ALL 12 numbers = $25,000</li>
+                        <li>Match NONE of 12 numbers = $25,000</li>
+                        <li>Match 11 or only 1 = $500</li>
+                        <li>Match 10 or only 2 = $20</li>
+                        <li>Match 9 or only 3 = $4</li>
+                    </ul>
+                </div>
+                <div class="rule-category">
+                    <h3>🎲 Number Selection</h3>
+                    <ul>
+                        <li>Choose 12 numbers from 1 to 24</li>
+                        <li>Each number can only be selected once</li>
+                        <li>Quick Pick available for random selection</li>
+                        <li>Fixed $2 bet amount (no other options)</li>
+                        <li>Up to 5 plays per playslip</li>
+                    </ul>
+                </div>
+                <div class="rule-category">
+                    <h3>📝 Important Information</h3>
+                    <ul>
+                        <li>Must be 18 or older to play</li>
+                        <li>Tickets expire 180 days after drawing date</li>
+                        <li>Prizes over $5,000 subject to taxes</li>
+                        <li>Winners have 180 days to claim prizes</li>
+                        <li>Play responsibly and within your means</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating Telegram Button -->
+    <div class="telegram-float">
+        <a href="https://t.me/+LALd-E8VV_4zYjdh" target="_blank" class="telegram-btn" title="Join our Telegram group for discussions">
+            <div class="telegram-icon">📱</div>
+            <div class="telegram-text">Join Discussions</div>
+        </a>
+    </div>
+
+    <footer>
+        <div class="container">
+            <!-- Visitor Counter -->
+            <div class="visitor-counter-section">
+                <div class="visitor-counter">
+                    <span class="counter-icon">👁️</span>
+                    <span class="counter-text">Total Visitors:</span>
+                    <span class="counter-number" id="visitorCount">0</span>
+                </div>
+            </div>
+            
+            <p>Good luck with your All or Nothing numbers! 🎪 Remember to play responsibly.</p>
+            <p><small>This website is not affiliated with the Texas Lottery Commission. Numbers generated are random and for entertainment purposes.</small></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

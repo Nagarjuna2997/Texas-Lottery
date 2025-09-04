@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash Five - Texas Lottery Lucky Numbers Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar-fixed">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">🎰 TX Lottery</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#rules" class="nav-link">Rules</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://t.me/+LALd-E8VV_4zYjdh" target="_blank" class="nav-link telegram-link">
+                        📱 Join Discussions
+                    </a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container game-page">
+        <div class="game-header-section">
+            <div class="game-icon-large">💰</div>
+            <h1>Cash Five</h1>
+            <p class="game-subtitle">Daily Cash Prizes with Great Odds</p>
+        </div>
+
+        <!-- Number Generator Section -->
+        <section class="generator-section">
+            <h2>🎲 Generate Your Lucky Numbers</h2>
+            <div class="generator-card">
+                <button onclick="generateNumbers('cashfive')" class="generate-btn-large">
+                    💰 Generate Cash Five Numbers
+                </button>
+                <div id="cashfive-result" class="result-display"></div>
+            </div>
+        </section>
+
+        <!-- How to Play Section -->
+        <section class="how-to-play">
+            <h2>🎮 How to Play Cash Five</h2>
+            <div class="play-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>🎯 Choose Your Numbers</h3>
+                        <p>Pick 5 different numbers from 1 to 37. Each number can only be selected once per play ⚪.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>🛒 Purchase Your Ticket</h3>
+                        <p>Buy your ticket from any authorized Texas Lottery retailer 🏪 for $1 per play before 10:02 PM CT.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>📺 Watch the Drawing</h3>
+                        <p>Drawings are held every day at 10:12 PM Central Time 🕙. Never miss a day!</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>🎉 Check Your Numbers</h3>
+                        <p>Match all 5 numbers to win the top prize! 💰 Even matching 2 numbers wins you a free Quick Pick ticket 🎫.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Prize Breakdown -->
+        <section class="prize-section">
+            <h2>💎 Prize Breakdown & Odds</h2>
+            <div class="prize-table">
+                <div class="prize-row header">
+                    <div>Match</div>
+                    <div>Prize</div>
+                    <div>Odds</div>
+                </div>
+                <div class="prize-row">
+                    <div>5 of 5</div>
+                    <div>$25,000</div>
+                    <div>1 in 324,632</div>
+                </div>
+                <div class="prize-row">
+                    <div>4 of 5</div>
+                    <div>$300</div>
+                    <div>1 in 2,164</div>
+                </div>
+                <div class="prize-row">
+                    <div>3 of 5</div>
+                    <div>$10</div>
+                    <div>1 in 75</div>
+                </div>
+                <div class="prize-row">
+                    <div>2 of 5</div>
+                    <div>Free Quick Pick</div>
+                    <div>1 in 8</div>
+                </div>
+            </div>
+            <div class="odds-info">
+                <p><strong>Overall odds of winning any prize:</strong> 1 in 8</p>
+                <p><strong>🏆 Top Prize:</strong> Fixed $25,000 for matching all 5 numbers</p>
+                <p><strong>📅 Daily drawings:</strong> 365 chances to win per year!</p>
+                <p><strong>🎯 Great odds:</strong> Best overall odds of any Texas Lottery draw game!</p>
+            </div>
+        </section>
+
+        <!-- Game Rules -->
+        <section class="rules-detailed">
+            <h2>📋 Detailed Game Rules</h2>
+            <div class="rules-content">
+                <div class="rule-category">
+                    <h3>📅 Drawing Schedule</h3>
+                    <ul>
+                        <li>Drawings held every single day</li>
+                        <li>Daily at 10:12 PM Central Time</li>
+                        <li>Sales close 10 minutes before drawing</li>
+                        <li>Tickets can be purchased until 10:02 PM CT daily</li>
+                        <li>365 drawings per year (366 in leap years)</li>
+                    </ul>
+                </div>
+                <div class="rule-category">
+                    <h3>🎯 How to Win</h3>
+                    <ul>
+                        <li>Match all 5 numbers for top prize of $25,000</li>
+                        <li>Four different ways to win prizes</li>
+                        <li>All prizes are fixed amounts</li>
+                        <li>Winners receive prizes as lump sum cash</li>
+                        <li>Best overall odds in Texas Lottery</li>
+                    </ul>
+                </div>
+                <div class="rule-category">
+                    <h3>🎲 Number Selection</h3>
+                    <ul>
+                        <li>Choose 5 numbers from 1 to 37</li>
+                        <li>Each number can only be selected once</li>
+                        <li>Quick Pick available for random selection</li>
+                        <li>Up to 5 plays per playslip</li>
+                        <li>Multi-draw option available (up to 12 draws)</li>
+                    </ul>
+                </div>
+                <div class="rule-category">
+                    <h3>📝 Important Information</h3>
+                    <ul>
+                        <li>Must be 18 or older to play</li>
+                        <li>Tickets expire 180 days after drawing date</li>
+                        <li>Prizes over $5,000 subject to taxes</li>
+                        <li>Winners have 180 days to claim prizes</li>
+                        <li>Play responsibly and within your means</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating Telegram Button -->
+    <div class="telegram-float">
+        <a href="https://t.me/+LALd-E8VV_4zYjdh" target="_blank" class="telegram-btn" title="Join our Telegram group for discussions">
+            <div class="telegram-icon">📱</div>
+            <div class="telegram-text">Join Discussions</div>
+        </a>
+    </div>
+
+    <footer>
+        <div class="container">
+            <!-- Visitor Counter -->
+            <div class="visitor-counter-section">
+                <div class="visitor-counter">
+                    <span class="counter-icon">👁️</span>
+                    <span class="counter-text">Total Visitors:</span>
+                    <span class="counter-number" id="visitorCount">0</span>
+                </div>
+            </div>
+            
+            <p>Good luck with your Cash Five numbers! 💰 Remember to play responsibly.</p>
+            <p><small>This website is not affiliated with the Texas Lottery Commission. Numbers generated are random and for entertainment purposes.</small></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Powerball - Texas Lottery Lucky Numbers Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar-fixed">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">🎰 TX Lottery</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#rules" class="nav-link">Rules</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://t.me/+LALd-E8VV_4zYjdh" target="_blank" class="nav-link telegram-link">
+                        📱 Join Discussions
+                    </a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container game-page">
+        <div class="game-header-section">
+            <div class="game-icon-large">🔴</div>
+            <h1>Powerball</h1>
+            <p class="game-subtitle">Multi-State Lottery with Massive Jackpots</p>
+        </div>
+
+        <!-- Number Generator Section -->
+        <section class="generator-section">
+            <h2>Generate Your Lucky Numbers</h2>
+            <div class="generator-card">
+                <button onclick="generateNumbers('powerball')" class="generate-btn-large">
+                    🎲 Generate Powerball Numbers
+                </button>
+                <div id="powerball-result" class="result-display"></div>
+            </div>
+        </section>
+
+        <!-- How to Play Section -->
+        <section class="how-to-play">
+            <h2>How to Play Powerball</h2>
+            <div class="play-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>🎯 Choose Your Numbers</h3>
+                        <p>Pick 5 different numbers from 1 to 69 for the white balls ⚪ and 1 number from 1 to 26 for the red Powerball 🔴.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>🛒 Purchase Your Ticket</h3>
+                        <p>Buy your ticket from any authorized Texas Lottery retailer 🏪 before the draw closes.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>📺 Watch the Drawing</h3>
+                        <p>Drawings are held every Monday, Wednesday, and Saturday at 10:59 PM CT 🕙.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>🎉 Check Your Numbers</h3>
+                        <p>Match all 6 numbers to win the jackpot! 💰 Even matching just the Powerball wins you $4 💵.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Prize Breakdown -->
+        <section class="prize-section">
+            <h2>Prize Breakdown & Odds</h2>
+            <div class="prize-table">
+                <div class="prize-row header">
+                    <div>Match</div>
+                    <div>Prize</div>
+                    <div>Odds</div>
+                </div>
+                <div class="prize-row">
+                    <div>5 White Balls + Powerball</div>
+                    <div>JACKPOT</div>
+                    <div>1 in 292,201,338</div>
+                </div>
+                <div class="prize-row">
+                    <div>5 White Balls</div>
+                    <div>$1,000,000</div>
+                    <div>1 in 11,688,054</div>
+                </div>
+                <div class="prize-row">
+                    <div>4 White Balls + Powerball</div>
+                    <div>$50,000</div>
+                    <div>1 in 913,129</div>
+                </div>
+                <div class="prize-row">
+                    <div>4 White Balls</div>
+                    <div>$100</div>
+                    <div>1 in 36,525</div>
+                </div>
+                <div class="prize-row">
+                    <div>3 White Balls + Powerball</div>
+                    <div>$100</div>
+                    <div>1 in 14,494</div>
+                </div>
+                <div class="prize-row">
+                    <div>3 White Balls</div>
+                    <div>$7</div>
+                    <div>1 in 580</div>
+                </div>
+                <div class="prize-row">
+                    <div>2 White Balls + Powerball</div>
+                    <div>$7</div>
+                    <div>1 in 701</div>
+                </div>
+                <div class="prize-row">
+                    <div>1 White Ball + Powerball</div>
+                    <div>$4</div>
+                    <div>1 in 92</div>
+                </div>
+                <div class="prize-row">
+                    <div>Powerball Only</div>
+                    <div>$4</div>
+                    <div>1 in 38</div>
+                </div>
+            </div>
+            <div class="odds-info">
+                <p><strong>Overall odds of winning any prize:</strong> 1 in 24.9</p>
+                <p><strong>Power Play:</strong> Multiplies non-jackpot prizes by 2x, 3x, 4x, 5x, or 10x for an additional $1 per play.</p>
+            </div>
+        </section>
+
+        <!-- Game Rules -->
+        <section class="rules-detailed">
+            <h2>Detailed Game Rules</h2>
+            <div class="rules-content">
+                <div class="rule-category">
+                    <h3>Drawing Schedule</h3>
+                    <ul>
+                        <li>Drawings are held three times per week</li>
+                        <li>Monday, Wednesday, and Saturday at 10:59 PM Central Time</li>
+                        <li>Sales close 59 minutes before each drawing</li>
+                        <li>Tickets can be purchased until 10:00 PM CT on drawing days</li>
+                    </ul>
+                </div>
+                <div class="rule-category">
+                    <h3>How to Win</h3>
+                    <ul>
+                        <li>Match all 5 white balls + Powerball = Jackpot</li>
+                        <li>Match any combination of numbers to win smaller prizes</li>
+                        <li>Jackpot starts at $20 million and grows until won</li>
+                        <li>Winners can choose cash lump sum or 30-year annuity</li>
+                    </ul>
+                </div>
+                <div class="rule-category">
+                    <h3>Important Information</h3>
+                    <ul>
+                        <li>Must be 18 or older to play</li>
+                        <li>Tickets expire 180 days after the drawing date</li>
+                        <li>Prizes over $5,000 are subject to federal and state taxes</li>
+                        <li>Winners have 180 days to claim their prize</li>
+                        <li>Power Play option available for additional $1</li>
+                    </ul>
+                </div>
+                <div class="rule-category">
+                    <h3>Power Play Feature</h3>
+                    <ul>
+                        <li>Multiplies non-jackpot prizes by 2x, 3x, 4x, 5x, or 10x</li>
+                        <li>10x multiplier only available when jackpot is $150 million or less</li>
+                        <li>Match 5 white balls with Power Play wins $2 million</li>
+                        <li>Costs an additional $1 per play</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating Telegram Button -->
+    <div class="telegram-float">
+        <a href="https://t.me/+LALd-E8VV_4zYjdh" target="_blank" class="telegram-btn" title="Join our Telegram group for discussions">
+            <div class="telegram-icon">📱</div>
+            <div class="telegram-text">Join Discussions</div>
+        </a>
+    </div>
+
+    <footer>
+        <div class="container">
+            <!-- Visitor Counter -->
+            <div class="visitor-counter-section">
+                <div class="visitor-counter">
+                    <span class="counter-icon">👁️</span>
+                    <span class="counter-text">Total Visitors:</span>
+                    <span class="counter-number" id="visitorCount">0</span>
+                </div>
+            </div>
+            
+            <p>Good luck with your Powerball numbers! Remember to play responsibly.</p>
+            <p><small>This website is not affiliated with the Texas Lottery Commission. Numbers generated are random and for entertainment purposes.</small></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

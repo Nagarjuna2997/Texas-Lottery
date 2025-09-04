@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lotto Texas - Texas Lottery Lucky Numbers Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar-fixed">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">🎰 TX Lottery</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#rules" class="nav-link">Rules</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://t.me/+LALd-E8VV_4zYjdh" target="_blank" class="nav-link telegram-link">
+                        📱 Join Discussions
+                    </a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container game-page">
+        <div class="game-header-section">
+            <div class="game-icon-large">⭐</div>
+            <h1>Lotto Texas</h1>
+            <p class="game-subtitle">Texas's Original Lottery Game Since 1992</p>
+        </div>
+
+        <!-- Number Generator Section -->
+        <section class="generator-section">
+            <h2>🎲 Generate Your Lucky Numbers</h2>
+            <div class="generator-card">
+                <button onclick="generateNumbers('lottotexas')" class="generate-btn-large">
+                    ⭐ Generate Lotto Texas Numbers
+                </button>
+                <div id="lottotexas-result" class="result-display"></div>
+            </div>
+        </section>
+
+        <!-- How to Play Section -->
+        <section class="how-to-play">
+            <h2>🎮 How to Play Lotto Texas</h2>
+            <div class="play-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>🎯 Choose Your Numbers</h3>
+                        <p>Pick 6 different numbers from 1 to 54. You can choose your own numbers or use Quick Pick for random selection ⚪.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>🛒 Purchase Your Ticket</h3>
+                        <p>Buy your ticket from any authorized Texas Lottery retailer 🏪 for $1 per play before 10:02 PM CT on draw days.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>📺 Watch the Drawing</h3>
+                        <p>Drawings are held every Wednesday and Saturday at 10:12 PM Central Time 🕙.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>🎉 Check Your Numbers</h3>
+                        <p>Match all 6 numbers to win the jackpot! 💰 Even matching 3 numbers wins you a free Quick Pick ticket 🎫.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Prize Breakdown -->
+        <section class="prize-section">
+            <h2>💎 Prize Breakdown & Odds</h2>
+            <div class="prize-table">
+                <div class="prize-row header">
+                    <div>Match</div>
+                    <div>Prize</div>
+                    <div>Odds</div>
+                </div>
+                <div class="prize-row">
+                    <div>6 of 6</div>
+                    <div>JACKPOT</div>
+                    <div>1 in 25,827,165</div>
+                </div>
+                <div class="prize-row">
+                    <div>5 of 6</div>
+                    <div>$2,000</div>
+                    <div>1 in 89,678</div>
+                </div>
+                <div class="prize-row">
+                    <div>4 of 6</div>
+                    <div>$50</div>
+                    <div>1 in 1,526</div>
+                </div>
+                <div class="prize-row">
+                    <div>3 of 6</div>
+                    <div>Free Quick Pick</div>
+                    <div>1 in 75</div>
+                </div>
+            </div>
+            <div class="odds-info">
+                <p><strong>Overall odds of winning any prize:</strong> 1 in 71</p>
+                <p><strong>🏆 Jackpot:</strong> Starts at $4 million and grows until someone wins!</p>
+                <p><strong>💰 Extra!:</strong> Add Extra! for $1 more to win up to $25,000 in additional prizes.</p>
+            </div>
+        </section>
+
+        <!-- Game Rules -->
+        <section class="rules-detailed">
+            <h2>📋 Detailed Game Rules</h2>
+            <div class="rules-content">
+                <div class="rule-category">
+                    <h3>📅 Drawing Schedule</h3>
+                    <ul>
+                        <li>Drawings are held twice per week</li>
+                        <li>Wednesday and Saturday at 10:12 PM Central Time</li>
+                        <li>Sales close 10 minutes before each drawing</li>
+                        <li>Tickets can be purchased until 10:02 PM CT on drawing days</li>
+                    </ul>
+                </div>
+                <div class="rule-category">
+                    <h3>🎯 How to Win</h3>
+                    <ul>
+                        <li>Match all 6 numbers to win the jackpot</li>
+                        <li>Four different ways to win prizes</li>
+                        <li>Jackpot starts at $4 million minimum</li>
+                        <li>Winners can choose cash lump sum or annuity</li>
+                        <li>Jackpot grows until someone wins</li>
+                    </ul>
+                </div>
+                <div class="rule-category">
+                    <h3>⚡ Extra! Feature</h3>
+                    <ul>
+                        <li>Add Extra! for an additional $1 per play</li>
+                        <li>Win up to $25,000 in additional prizes</li>
+                        <li>Separate drawing with your same 6 numbers</li>
+                        <li>Five different Extra! prize levels</li>
+                        <li>Extra! prizes are fixed amounts</li>
+                    </ul>
+                </div>
+                <div class="rule-category">
+                    <h3>📝 Important Information</h3>
+                    <ul>
+                        <li>Must be 18 or older to play</li>
+                        <li>Tickets expire 180 days after drawing date</li>
+                        <li>Prizes over $5,000 subject to taxes</li>
+                        <li>Winners have 180 days to claim prizes</li>
+                        <li>Play responsibly and within your means</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating Telegram Button -->
+    <div class="telegram-float">
+        <a href="https://t.me/+LALd-E8VV_4zYjdh" target="_blank" class="telegram-btn" title="Join our Telegram group for discussions">
+            <div class="telegram-icon">📱</div>
+            <div class="telegram-text">Join Discussions</div>
+        </a>
+    </div>
+
+    <footer>
+        <div class="container">
+            <!-- Visitor Counter -->
+            <div class="visitor-counter-section">
+                <div class="visitor-counter">
+                    <span class="counter-icon">👁️</span>
+                    <span class="counter-text">Total Visitors:</span>
+                    <span class="counter-number" id="visitorCount">0</span>
+                </div>
+            </div>
+            
+            <p>Good luck with your Lotto Texas numbers! ⭐ Remember to play responsibly.</p>
+            <p><small>This website is not affiliated with the Texas Lottery Commission. Numbers generated are random and for entertainment purposes.</small></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

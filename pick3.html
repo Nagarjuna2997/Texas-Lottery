@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pick 3 - Texas Lottery Lucky Numbers Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar-fixed">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">🎰 TX Lottery</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#rules" class="nav-link">Rules</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://t.me/+LALd-E8VV_4zYjdh" target="_blank" class="nav-link telegram-link">
+                        📱 Join Discussions
+                    </a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container game-page">
+        <div class="game-header-section">
+            <div class="game-icon-large">🎯</div>
+            <h1>Pick 3</h1>
+            <p class="game-subtitle">Daily Drawings with Multiple Ways to Win</p>
+        </div>
+
+        <!-- Number Generator Section -->
+        <section class="generator-section">
+            <h2>🎲 Generate Your Lucky Numbers</h2>
+            <div class="generator-card">
+                <button onclick="generateNumbers('pick3')" class="generate-btn-large">
+                    🎯 Generate Pick 3 Numbers
+                </button>
+                <div id="pick3-result" class="result-display"></div>
+            </div>
+        </section>
+
+        <!-- How to Play Section -->
+        <section class="how-to-play">
+            <h2>🎮 How to Play Pick 3</h2>
+            <div class="play-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>🎯 Choose Your Numbers</h3>
+                        <p>Pick 3 numbers from 0 to 9. You can choose the same number more than once (like 1-1-2 or 7-7-7) 🔢.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>🎲 Select Your Play Type</h3>
+                        <p>Choose Straight (exact order), Box (any order), Straight/Box, or Combo for different ways to win 🎮.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>🛒 Purchase Your Ticket</h3>
+                        <p>Buy your ticket from any authorized Texas Lottery retailer 🏪. Tickets cost from $0.50 to $6 depending on play type.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>📺 Watch the Drawings</h3>
+                        <p>Four daily drawings: Morning (10:12 AM), Day (12:27 PM), Evening (6:07 PM), Night (10:12 PM) 🕙.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>🎉 Check Your Numbers</h3>
+                        <p>Win up to $500 for a $1 Straight bet! 💰 Multiple ways to win based on your play type.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Prize Breakdown -->
+        <section class="prize-section">
+            <h2>💎 Prize Breakdown & Play Types</h2>
+            <div class="prize-table">
+                <div class="prize-row header">
+                    <div>Play Type</div>
+                    <div>How to Win</div>
+                    <div>Example</div>
+                    <div>Prize ($1 bet)</div>
+                </div>
+                <div class="prize-row">
+                    <div>Straight</div>
+                    <div>Match in exact order</div>
+                    <div>123 wins with 123</div>
+                    <div>$500</div>
+                </div>
+                <div class="prize-row">
+                    <div>Box (3-way)</div>
+                    <div>Match in any order (2 same)</div>
+                    <div>112 wins with 112, 121, 211</div>
+                    <div>$160</div>
+                </div>
+                <div class="prize-row">
+                    <div>Box (6-way)</div>
+                    <div>Match in any order (all different)</div>
+                    <div>123 wins 6 ways</div>
+                    <div>$80</div>
+                </div>
+                <div class="prize-row">
+                    <div>Straight/Box</div>
+                    <div>Win both ways</div>
+                    <div>If drawn straight: higher prize</div>
+                    <div>$330/$90</div>
+                </div>
+                <div class="prize-row">
+                    <div>Combo</div>
+                    <div>Covers all straight possibilities</div>
+                    <div>123 = 6 separate $1 straight bets</div>
+                    <div>$500</div>
+                </div>
+            </div>
+            <div class="odds-info">
+                <p><strong>🎯 Straight odds:</strong> 1 in 1,000</p>
+                <p><strong>📦 Box odds:</strong> 1 in 167 (3-way) or 1 in 333 (6-way)</p>
+                <p><strong>⏰ Four drawings daily:</strong> More chances to win every day!</p>
+            </div>
+        </section>
+
+        <!-- Game Rules -->
+        <section class="rules-detailed">
+            <h2>📋 Detailed Game Rules</h2>
+            <div class="rules-content">
+                <div class="rule-category">
+                    <h3>📅 Drawing Schedule</h3>
+                    <ul>
+                        <li>Four drawings every day</li>
+                        <li>Morning: 10:12 AM CT</li>
+                        <li>Day: 12:27 PM CT</li>
+                        <li>Evening: 6:07 PM CT</li>
+                        <li>Night: 10:12 PM CT</li>
+                    </ul>
+                </div>
+                <div class="rule-category">
+                    <h3>🎯 Play Types Explained</h3>
+                    <ul>
+                        <li><strong>Straight:</strong> Numbers must match in exact order drawn</li>
+                        <li><strong>Box:</strong> Numbers can match in any order</li>
+                        <li><strong>Straight/Box:</strong> Win either way with one bet</li>
+                        <li><strong>Combo:</strong> Covers all straight combinations</li>
+                        <li>Choose your bet amount: $0.50, $1, $2, $3, $4, $5</li>
+                    </ul>
+                </div>
+                <div class="rule-category">
+                    <h3>💰 Betting Options</h3>
+                    <ul>
+                        <li>Minimum bet: $0.50 per play</li>
+                        <li>Maximum bet: $5 per play</li>
+                        <li>Straight/Box requires $1 minimum</li>
+                        <li>Combo cost varies by number combination</li>
+                        <li>Fireball option adds $1 to any play</li>
+                    </ul>
+                </div>
+                <div class="rule-category">
+                    <h3>📝 Important Information</h3>
+                    <ul>
+                        <li>Must be 18 or older to play</li>
+                        <li>Tickets expire 180 days after drawing date</li>
+                        <li>Prizes over $5,000 subject to taxes</li>
+                        <li>Winners have 180 days to claim prizes</li>
+                        <li>Play responsibly and within your means</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating Telegram Button -->
+    <div class="telegram-float">
+        <a href="https://t.me/+LALd-E8VV_4zYjdh" target="_blank" class="telegram-btn" title="Join our Telegram group for discussions">
+            <div class="telegram-icon">📱</div>
+            <div class="telegram-text">Join Discussions</div>
+        </a>
+    </div>
+
+    <footer>
+        <div class="container">
+            <!-- Visitor Counter -->
+            <div class="visitor-counter-section">
+                <div class="visitor-counter">
+                    <span class="counter-icon">👁️</span>
+                    <span class="counter-text">Total Visitors:</span>
+                    <span class="counter-number" id="visitorCount">0</span>
+                </div>
+            </div>
+            <p>Good luck with your Pick 3 numbers! 🎯 Remember to play responsibly.</p>
+            <p><small>This website is not affiliated with the Texas Lottery Commission. Numbers generated are random and for entertainment purposes.</small></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
